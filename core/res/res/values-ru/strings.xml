@@ -34,7 +34,7 @@
     <string name="defaultMsisdnAlphaTag" msgid="2285034592902077488">"MSISDN1"</string>
     <string name="mmiError" msgid="2862759606579822246">"Неполадки подключения или неверный код MMI."</string>
     <string name="mmiFdnError" msgid="3975490266767565852">"Операция возможна только для разрешенных номеров."</string>
-    <string name="mmiErrorWhileRoaming" msgid="1204173664713870114">"Вы не можете изменить настройки переадресации вызовов, поскольку находитесь в роуминге."</string>
+    <string name="mmiErrorWhileRoaming" msgid="1204173664713870114">"Ты не можешь изменить настройки переадресации вызовов, поскольку находишься в роуминге."</string>
     <string name="serviceEnabled" msgid="7549025003394765639">"Служба включена."</string>
     <string name="serviceEnabledFor" msgid="1463104778656711613">"Служба подключена для:"</string>
     <string name="serviceDisabled" msgid="641878791205871379">"Служба отключена."</string>

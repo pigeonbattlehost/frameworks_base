@@ -9080,7 +9080,8 @@ public final class Settings {
          */
         @TestApi
         public static final String NOTIFICATION_BUBBLES = "notification_bubbles";
-
+        
+       
         /**
          * Whether users are allowed to add more users or guest from lockscreen.
          * <p>
@@ -9783,6 +9784,9 @@ public final class Settings {
         */
        @UnsupportedAppUsage
        public static final String MOBILE_DATA = "mobile_data";
+       
+       /** @hide */
+       public static final String ZENITH_ALLOW_2G = "zenith_allow_2g";
 
        /**
         * Whether the mobile data connection should remain active even when higher

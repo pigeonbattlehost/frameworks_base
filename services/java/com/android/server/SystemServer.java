@@ -127,6 +127,7 @@ import com.android.server.media.projection.MediaProjectionManagerService;
 import com.android.server.net.NetworkPolicyManagerService;
 import com.android.server.net.NetworkStatsService;
 import com.android.server.net.watchlist.NetworkWatchlistService;
+import com.android.server.net.DataLimitService;
 import com.android.server.notification.NotificationManagerService;
 import com.android.server.oemlock.OemLockService;
 import com.android.server.om.OverlayManagerService;
@@ -1165,6 +1166,7 @@ public final class SystemServer {
             t.traceBegin("SetWindowManagerService");
             mActivityManagerService.setWindowManager(wm);
             t.traceEnd();
+            
 
             t.traceBegin("WindowManagerServiceOnInitReady");
             wm.onInitReady();
@@ -1478,7 +1480,9 @@ public final class SystemServer {
                 reportWtf("starting NetworkPolicy Service", e);
             }
             t.traceEnd();
-
+            
+            mSystemServiceManager.startService(DataLimitService.class);
+            
             if (context.getPackageManager().hasSystemFeature(
                     PackageManager.FEATURE_WIFI)) {
                 // Wifi Service must be started first for wifi-related services.
